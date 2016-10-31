@@ -1,12 +1,31 @@
+buildscript {
+    repositories {
+        maven { url 'https://maven.fabric.io/public' }
+    }
+
+    dependencies {
+        classpath 'io.fabric.tools:gradle:1.+'
+    }
+}
+buildscript {
+    repositories {
+        maven { url 'https://maven.fabric.io/public' }
+    }
+
+    dependencies {
+        classpath 'io.fabric.tools:gradle:1.+'
+    }
+}
 apply plugin: 'com.android.application'
 apply plugin: 'io.fabric'
+apply plugin: 'com.google.gms.google-services'
 
 android {
     compileSdkVersion 24
     buildToolsVersion '24.0.3'
 
     defaultConfig {
-        applicationId "naman14.timber"
+        applicationId "com.devalladolid.musictoday"
         minSdkVersion 16
         targetSdkVersion 24
         versionCode 14
